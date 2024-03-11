@@ -27,10 +27,10 @@ public class Main {
         int max = arr[0];
         for (int i = 0; i < arr.length; i = i + 1) {
             if (arr[i] < min) {
-                arr[i] = min;
+                min = arr [i];
             }
             if (arr[i] > max) {
-                arr[i] = max;
+                max = arr[i];
             }
         } System.out.println("Минимальная сумма за неделю составила " + min + " рублей");
         System.out.println("Максимальная ставка за неделю составит " + max + " рублей");
@@ -44,8 +44,8 @@ public class Main {
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = 0; i < reverseFullName.length / 2; i = i + 1 ) {
             int temp = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - i - 1];
-            reverseFullName[reverseFullName.length - i - 1] = (char) temp;
+            reverseFullName[i] = reverseFullName[reverseFullName.length - i - 2];
+            reverseFullName[reverseFullName.length - i - 2] = (char) temp;
         }
         for (int i = 0; i < reverseFullName.length; i = i + 1 ) {
             System.out.print(reverseFullName[i]);
