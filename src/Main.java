@@ -44,8 +44,8 @@ public class Main {
         char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = 0; i < reverseFullName.length / 2; i = i + 1 ) {
             int temp = reverseFullName[i];
-            reverseFullName[i] = reverseFullName[reverseFullName.length - i - 2];
-            reverseFullName[reverseFullName.length - i - 2] = (char) temp;
+            reverseFullName[i] = reverseFullName[reverseFullName.length - i - 1];
+            reverseFullName[reverseFullName.length - i - 1] = (char) temp;
         }
         for (int i = 0; i < reverseFullName.length; i = i + 1 ) {
             System.out.print(reverseFullName[i]);
